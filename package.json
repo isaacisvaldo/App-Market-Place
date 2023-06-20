@@ -1,0 +1,18 @@
+{
+  "name": "app_market-place",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "knex": "npx knex migrate:latest",
+    "knex:reverter": "npx knex migrate:rollback",
+    "knex:adicionar": "npx knex migrate:make",
+    "knex:remover": "npx knex migrate:drop",
+    "knex:seed": "npx knex seed:run",
+    "knex:migrationEspecifica": "npx knex migrate:up"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

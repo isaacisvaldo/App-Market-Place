@@ -1,0 +1,12 @@
+                                      LEASING
+»»»»»»»»»»»»»»»»»»»»»»»»»»««««««««LOGAR NO APLICATIO»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
+rota:/LoginLeasing
+tipo:post
+retorno:token,cliente
+Nota:token{tera o seu tokem vai lhe permitir navegar nas rotas}cliente{dados do cliente}
+Com esta rota ele vai poder logar 
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»CADASTRAR-SE»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»«
+rota:/NovoClienteLeasing
+tipo:post
+retorno:certo ou errado
+nome dos input:nome, email, telefone, username, senha, senha2, nif,provincia,municipio,endereco
