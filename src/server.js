@@ -5,9 +5,9 @@ const session = require("express-session");
 const flash = require("express-flash");
 const cors =require("cors")
 const  route = require('./routes/routes');
-
 const BD = require('./database/database')
-const port = process.env.PORT || 3000;
+require('dotenv').config();
+const port = process.env.PORT ||3000;
 
 app.set('view engine','ejs');
 app.use(session({
@@ -16,7 +16,6 @@ app.use(session({
     resave:true
 }))
 app.use(flash());
-
 app.use(express.static('public'));
 //Body parser
 app.use(bodyParser.urlencoded({extended: false}));
