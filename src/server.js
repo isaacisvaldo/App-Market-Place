@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const flash = require("express-flash");
+const cors =require("cors")
 const  route = require('./routes/routes');
 
 const BD = require('./database/database')
@@ -10,7 +11,7 @@ const port = process.env.PORT || 3000;
 
 app.set('view engine','ejs');
 app.use(session({
-    secret: "qualquercoisaparaaumentaraseguranç@", cookie: { maxAge: 80000000 },
+    secret: "qualquercoisaparaaumentaraseguranç@", cookie: { maxAge:80000000 },
     saveUninitialized:true,
     resave:true
 }))

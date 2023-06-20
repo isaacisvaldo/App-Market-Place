@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
-const BD = require('../database/database')
+const BD = require('../../database/database')
 //Sercret JWT
 const JWTSecret = "djkshahjksdajksdhasISAACISVALDOPIMENTELBUNGA123jkdhasjkdhasjkdhasjkdkkkkklllllbbbnn";
 class E_commerceController {
